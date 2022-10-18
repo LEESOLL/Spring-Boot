@@ -12,7 +12,7 @@ public class MemberApp {
 //        AppConfig appConfig = new AppConfig();
 //        MemberService memberService = appConfig.memberService();
 
-        //spring은 뭐든게 ApplicationContext로 시작함
+        //spring은 모든게 ApplicationContext로 시작함
         //이게 스프링 컨테이너로 보면 된다. 이게 @Bean한 객체들을 모두 관리해줌
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
         MemberService memberService = applicationContext.getBean("memberService", MemberService.class);

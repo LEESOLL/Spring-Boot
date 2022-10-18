@@ -12,8 +12,8 @@ import hello.core.order.OrderServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-//애플리케이션 전체를 설정하고 구성하겠다(configuration)
-@Configuration
+
+@Configuration //애플리케이션 전체를 설정하고 구성하겠다(configuration)
 public class AppConfig {
 
     @Bean
